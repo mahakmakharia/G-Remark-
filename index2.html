@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Enter your piece of text here!</title>
+
+    <meta name="viewport" id="viewport" content="width=570">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link rel=stylesheet href="style.css" type="text/css">
+
+    <style>
+        div.txt{
+            height: 400px;
+        }
+        #look{
+            height: 400px;
+            width: 600px;
+            text-overflow: clip;
+        }
+        .b1{
+            margin: 12px;
+            background: #004df4;
+            color: #ffffff;
+            border-radius: 10px;
+            height: 40px;
+            padding: 7px;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg custom-navbar sticky">
+              <div class="container  main-nav">
+                  <a class="navbar-brand" href="index.html">G-Remark</a>
+                </div>
+            </nav>  
+    <center>
+      <br><br><br>
+      <h1>Enter your word here!</h1>
+
+      <br>
+      
+      <div class="input-group" style="width: 400px;">
+        <input autofocus="autofocus" style="font-size: 16px" type="text" id="lookupText" onchange="wordTyped()" oninput="wordTyped()" onpaste="wordTyped()" class="form-control" placeholder="Enter a word...">
+      </div>
+      
+      <br>
+      <div id="results"></div>
+      
+      <br><br>
+      <div class="footer">
+	
+      </div>
+    </center>
+
+    <script src="english_word_list.js"></script>
+    <script src="spellchecker.js"></script>
+    
+    <script charset="UTF-8">
+      set_valid_word_list(english_word_list);
+    </script>
+
+    <script src="ui.js"></script>
+         
+      </header>
+       <footer id="footer">
+            <div class="container">
+                <p class="lead">
+                    Made with &hearts; by team G-Remark
+                </p>
+            </div>
+            
+            </footer>
+  </body>
+   
+</html>
