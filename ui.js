@@ -44,13 +44,20 @@ function displayRecommendation(new_word){
         
         for(var i = 0; i < rList.length && i < max_num_of_items; i++){
             if(i == 0 && rList[0].toLowerCase() == new_word){
-                code_out += "<a href='#' class='list-group-item list-group-item-success'>"
+                //Added onclick handler
+                // Takes the current string as argument and passes to showSelected function
+                code_out += "<a href='#' onclick = showSelected(\"" + rList[i] + "\") class='list-group-item list-group-item-success'>"
                          + rList[i] + "</a>";
             }
-            else code_out += "<a href='#' class='list-group-item'>" + rList[i] + "</a>";
+            else code_out += "<a href='#' onclick = showSelected(\"" + rList[i] + "\") class='list-group-item'>" + rList[i] + "</a>";
         }
+        console.log(code_out);
         code_out += "</span>";
         
         document.getElementById("results").innerHTML = code_out;
     }
+}
+function showSelected(text){
+    // Changes the string in i/p box
+    document.getElementById("lookupText").value = text;
 }
