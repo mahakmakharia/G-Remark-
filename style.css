@@ -5,6 +5,9 @@
     box-sizing: border-box;
 }
 
+
+
+
 header {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(bg.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(bg.jpg);
@@ -13,6 +16,8 @@ header {
     height:100vh;
     background-attachment: fixed;
 }
+
+
 body {
     background-color: #fff;
     color: #555;
@@ -88,8 +93,13 @@ h2:after {
     text-align: center;
    
 }
+
+#working
+{
+   background-color: rgba(242, 242, 242, 0.88); 
+}
 section{
-    padding: 60px 0px;
+    padding:80px;
 }
 .custom-navbar
 {
@@ -104,18 +114,73 @@ section{
     margin: 0px 3px;
    
 }
+.foot
+{
+    margin: auto;
+    padding: 10px 0px 40px 0px;
+    width: 20%;
+}
+
+.large
+{
+    width: 85%;
+    margin: auto;
+    
+}
+.card
+{
+    margin: 30px !important;
+    
+}
+.small
+{
+    width: 60%;
+    margin: auto;
+}
+
+.color-one {
+  color: #e67e22;
+}
+#features
+{
+    background-color: #f2f2f2;
+    
+}
+.service-item {
+  position: relative;
+  padding-left: 80px;
+}
+
+.service-item i {
+  position: absolute;
+
+  left: 0px;
+  top: 5px;
+  padding-top: 5px;
+   
+  padding-right: 20px;
+  font-size: 50px;
+  opacity: 1;
+}
+
+.main-text
+{
+    padding: 220px 150px;
+}
 
 a:hover,
 a:active {
     
     color: #fff8f8;
+    text-decoration: none;
 }
 
 .btn1
 {
     background-color:  #e67e22 !important;
     border: none;
-    -ms-flex-line-pack: center;
+    margin:0px 10px;
+    
     align-content: center;
 }
 .btn1:hover,
@@ -125,22 +190,27 @@ input[type=submit]:active {
    color:  #4d1b00 ;
 }
 
+
 #contact-us
 {
     padding: 80px;
-    background-color: #ececec;
+    background-color: #f2f2f2;
 }
 #footer
 {
-    background-color: #383737;
+    background-color: #000 !important;
 
-    color: white;
+    color: #fff !important;
 }
 #footer p
 {
-    margin: 0;
-    padding: 20px;
+    
+    padding: 50px 50px 0px 50px;
     text-align: center;
     font-size: 80%;
+
     
 }
+
+
+
