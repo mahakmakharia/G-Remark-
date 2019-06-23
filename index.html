@@ -211,7 +211,10 @@
            <section id="contact-us">
                 <h2 class="headings h2">Contact US</h2>
                 <form>
-                                
+                          <div class="form-group">
+                    <label for="exampleInputName1">Your name</label>
+                    <input name="name" type="text" class="form-control" id="exampleInputName1"  placeholder="Enter your name" required>
+                    </div>                      
                   <div class="form-group">
                     <label for="exampleInputEmail1">Email address</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@example.com">
@@ -224,7 +227,23 @@
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
                     <label class="form-check-label" for="exampleCheck1">Send me Newsletter</label>
                   </div>
-                  <button type="submit" class="btn btn-primary btn1 ">Send!</button>
+                                                    <button type="submit" class="btn btn-dark btn-lg ">Send</button>
+                  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".btn-dark").click(function(){
+    alert("Thankyou! we will reach you soon");
+  });
+  $("input").focus(function(){
+    $(this).css("background-color", "#cccccc");
+  });
+  $("input").blur(function(){
+  	$(this).css("background-color", "#ffffff");  });
+  });
+  
+});
+
+</script>
                    
 
                   
